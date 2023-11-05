@@ -1,0 +1,23 @@
+Pentru inceput, construim un vector de siruri care sunt cuvintele posibile
+de a fi alese pentru ghicit. Dupa aceea, definim perechile de culori necesare
+si intram in modul curses. Acesta este inceputul jocului. Aici alegem la
+intamplare cuvantul care trebuie ghicit si afisam interfata grafica a jocului.
+Din acest moment utilizatorul poate introduce caractere pentru a interactiona
+cu jocul. Acesta poate introduce litere, ENTER sau BACKSPACE. La introducerea
+unei litere aceasta apare in tabela de joc daca nu sunt deja 5 litere pe acel
+rand. Daca da, aceasta este ignorata. La apasarea tastei ENTER, daca exista
+deja 5 litere pe rand se trece la etapa de verificare a cuvantului introdus
+sau, daca nu sunt 5 litere, apare un mesaj care informeaza jucatorul ca 
+este obligatoriu ca un cuvant sa aiba 5 litere. La apasarea tastei BACKSPACE,
+daca sunt litere in tabela atunci ultima litera este stearsa, iar daca nu 
+tasta este ignorata. Dupa ce a fost un cuvant valid, setrece la etapa de
+verificare, in care sunt comparate literele din cuvantul introdus cu cele
+din cuvantul ales de joc. Daca litera corespunde perfect in cuvant, aceasta
+este colorata in verde. Daca litera exista in cuvant, dar nu este pe pozitia
+buna se va colora in galben. Daca litera nu exista in cuvant se va colora normal.
+Daca cuvantul este cel cautat, atunci pe ecran apare mesajul care il informeaza
+pe jucator ca a castigat si optiunea de a incepe un joc nou sau de a iesi din
+joc. Daca jucatorul ramane fara incercari, atunci acesta pierde jocul si va
+avea afisat pe ecran cuvantul ales de joc, impreuna cu optiounea de a incepe
+un joc nou sau de a iesi din joc. Daca se alege sa se inceapa un joc nou,
+se va alege un nou cuvant si jocul o va lua de la inceput.
